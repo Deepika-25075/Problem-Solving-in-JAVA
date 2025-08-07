@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner o=new Scanner(System.in);
+        int tot=o.nextInt();
+        int per_team=o.nextInt();
+        int team=tot/per_team;
+        System.out.println("Total teams formed: "+team);
+        int left=tot%per_team;
+        System.out.println("Players left out: "+left);
+        
+        
+    }
+}
