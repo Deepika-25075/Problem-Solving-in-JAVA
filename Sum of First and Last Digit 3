@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner o=new Scanner(System.in);
+        int n=o.nextInt();
+        int rev=0;
+        n=Math.abs(n);
+        int last=n%10;
+        while(n!=0)
+        {
+            int rem=n%10;
+            rev=rem;
+            n=n/10;
+        }
+        int first=rev;
+        System.out.println(first+last);
+       
+    }
+}
