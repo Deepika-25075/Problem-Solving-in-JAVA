@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+     Scanner o=new Scanner(System.in);
+     int n=o.nextInt();
+     int squ=n*n;
+        int n1=n;
+        int count=0;
+        while(n!=0)
+        {
+            count++;
+            n=n/10;
+        }
+        int power=(int)Math.pow(10,count);
+        int rem=squ%power;
+        if(rem==n1)
+        {
+            System.out.println("Automorphic");
+        }
+        else{
+            System.out.println("Not Automorphic");
+        }}
+}
