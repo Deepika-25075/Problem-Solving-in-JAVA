@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner o=new Scanner(System.in);
+        int n=o.nextInt();
+        int sum=0;
+        int neo=(int)Math.pow(n,2);
+        int n1=n;
+        while(neo!=0)
+        {
+            int rem=neo%10;
+            sum=sum+rem;
+            neo=neo/10;
+        }
+     if(n1==sum)
+     {
+         System.out.println("true");
+     }
+        else
+        {
+             System.out.println("false"); 
+        }
+    }
+}
